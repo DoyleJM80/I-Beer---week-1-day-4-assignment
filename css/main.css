@@ -1,3 +1,8 @@
+/*  'Josefin Sans'
+    'Noto Serif'
+    'Dancing Script'
+*/
+
 *, *:before, *:after {
   box-sizing: border-box;
 }
@@ -12,13 +17,12 @@
   background: transparent;
 }
 
-/* 'Josefin Sans'
-'Noto Serif'
-'Dancing Script' */
-
 html {
-  max-width: 1280px;
+  width: 1280px;
+  height: 2930px;
 }
+
+/* navbar */
 
 nav {
   margin-top: -5px;
@@ -41,16 +45,21 @@ nav ul li a {
   font-size: 18px;
   text-decoration: none;
   text-transform: uppercase;
+  font-family: 'Noto Serif';
 }
 
 .fa-facebook {
   font-size: 30px;
 }
 
+/* end navbar */
+/* page header */
+
 .page-header {
   background-image: url('../img/header-img.jpg');
   height: 600px;
   background-size: cover;
+  background-position: center;
 }
 
 header section h1 {
@@ -59,7 +68,7 @@ header section h1 {
   font-family: 'Josefin Sans';
   position: absolute;
   top: 250px;
-  left: 480px;
+  left: 505px;
   z-index: 2
 }
 
@@ -69,12 +78,15 @@ header section h1 {
   font-family: 'Dancing Script';
   color: white;
   font-size: 70px;
-  left: 315px;
+  left: 337px;
   top: 329px;
   text-shadow: 2px 2px rgba(0, 0, 0, .7);
 }
 
-.blog-row {
+/* end page header */
+/* main section */
+
+main {
   display: inline-block;
   width: 1155px;
   height: 2215px;
@@ -83,11 +95,117 @@ header section h1 {
   top: 570px;
   left: 60px;
   background-color: rgb(255, 249, 237);
-  box-shadow: 0 2px 2px 2px rgba(211, 211, 211, .5);
+  box-shadow: 0 3px 7px -3px rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog-row {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin: 70px 0 0 135px;
 }
+
+.primary-txt {
+  font-family: 'Josefin Sans';
+}
+
+.item {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 538px;
+  box-shadow: 0 3px 7px -3px rgba(0, 0, 0, 0.9);
+}
+
+.meta {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid;
+  border-color: rgb(207, 207, 207);
+  padding-bottom: 12px;
+  padding-top: 25px;
+  width: 490px;
+  margin-left: 25px;
+  text-transform: uppercase;
+}
+
+.date {
+  margin-left: 90px;
+  margin-top: 15px
+}
+
+.category {
+  margin-right: 70px;
+  margin-top: 15px;
+}
+
+.item:last-child {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.icon-wrapper {
+  height: 50px;
+  width: 50px;
+  background-color: rgb(238, 234, 223);
+  border-radius: 50%;
+  color: white;
+  padding-left: 17px;
+  padding-top: 15px;
+  position: absolute;
+}
+
+aside {
+  display: inline-block;
+  height: 1170px;
+  width: 350px;
+  background-color: rgb(240, 234, 224);
+  margin-top: 30px;
+  margin-right: 50px;
+  box-shadow: 0 3px 5px 3px rgba(207, 207, 207, 0.8);
+}
+/* images */
+
+#dino {
+  background-image: url('../img/dino.jpg');
+  height: 250px;
+  width: 250px;
+  background-size: cover;
+  background-position: center;
+  display: inline-block;
+}
+
+#xx {
+  background-image: url('../img/xx.png');
+  height: 250px;
+  width: 250px;
+  background-size: cover;
+  background-position: center;
+  display: inline-block;
+}
+
+#yhact-img {
+  background-image: url('../img/yhact.jpg');
+  height: 250px;
+  width: 250px;
+  background-size: cover;
+  background-position: center;
+  display: inline-block;
+}
+
+.auth-pic {
+  background-image: url('../img/author.jpeg');
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  background-size: cover;
+}
+
+/* end images */
+/*
 
 .item {
   display: inline-block;
@@ -96,7 +214,7 @@ header section h1 {
   background-color: rgb(255, 255, 255);
   box-shadow: 2px 2px rgba(0, 0, 0, 0.3), -2px 2px rgba(0, 0, 0, 0.3);
 }
-
+/*
 aside {
   display: inline-block;
   height: 1170px;
@@ -174,6 +292,8 @@ aside p {
   left: 135px;
 }
 
+
+
 .icon-wrapper {
   height: 50px;
   width: 50px;
@@ -209,11 +329,57 @@ aside p {
   height: 250px;
   width: 250px;
   background-size: cover;
+  background-position: center;
   display: inline-block;
+  position: absolute;
+  z-index: 11;
+  right: 20px;
+  bottom: 30px;
 }
 
 .entry-title {
   width: 240px;
   margin-left: 25px;
   display: inline-block;
+  position: absolute;
+  z-index: 11;
+  top: 105px;
+  font-size: 21px;
+}
+
+.primary-txt {
+  display: inline-block;
+  width: 225px;
+
+}
+
+aside p {
+  width: 290px !important;
+}
+
+.item .primary-txt {
+  display: inline-block;
+  margin-left: 20px;
+  padding-top: 75px;
+  font-size: 18px;
+  line-height: 175%;
+}
+
+*/
+
+footer {
+  background-color: rgb(46, 45, 43);
+  position: absolute;
+  z-index: 10;
+  bottom: -2100px;
+  width: 1280px;
+  height: 30px;
+  text-align: center;
+}
+
+footer span {
+  color: white;
+  display: inline-block;
+  margin: 0 auto;
+  padding-top: 5px;
 }
