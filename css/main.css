@@ -22,6 +22,10 @@ html {
   /*height: 2930px;*/
 }
 
+.container {
+  margin: 0 auto;
+}
+
 /* navbar */
 
 nav {
